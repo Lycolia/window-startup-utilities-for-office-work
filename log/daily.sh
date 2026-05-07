@@ -66,7 +66,8 @@ createLog() {
 }
 
 wkPath=`dirname $0`
-baseDir="${wkPath}/log"
+cd "${wkPath}"
+baseDir="log"
 year=`date +%Y`
 month=`date +%m`
 monthText=$(($month))
